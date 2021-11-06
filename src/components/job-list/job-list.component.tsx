@@ -158,7 +158,7 @@ const JobList = (props:any) => {
         
         
         
-        <a className="apply-muse" href={item[4]}>APPLY ON MUSE SITE</a>
+        <a className="apply-muse" href={item[4]} target="_blank" rel="noreferrer">APPLY ON MUSE SITE</a>
         
         </div>
         </div>
