@@ -1,0 +1,516 @@
+.company-search{
+    height: 100%;
+
+    .filter{
+    
+        margin-top: 14rem;
+        
+        position: relative;
+        width: fit-content;
+        cursor: default;
+        margin-right: auto;
+        margin-left: auto;
+        .active-filter-header{
+        text-align: initial;  
+        .active-title-buttons-section{ 
+            display: flex;
+            align-items: center;
+        .active-filter-title{
+            font-family: nunito sans,Helvetica,sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            text-rendering: optimizeLegibility;
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .active-filter-button-location{
+            font-family: nunito sans,Helvetica,sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            text-rendering: optimizeLegibility;
+            font-size: 13px;
+            padding: 3px 15px;
+            text-align: left;
+            text-transform: initial;
+            letter-spacing: 0;
+            height: min-content; 
+            margin-top: 7px;
+            border-radius: 25px;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            line-height: 1.2em;
+            text-decoration: none!important;
+            background-color: #3852d4;
+            color: #fff;
+            margin-left: 1rem; 
+            transition:  background-color 0.4s ease;
+            span{
+                font-size: 16px;
+                margin-left: 6px;
+            }  
+
+            &:hover{
+                background-color: #2c2c9b;
+                transition:  background-color 0.4s ease; 
+            }
+        }
+        .active-filter-button-industry{
+            font-family: nunito sans,Helvetica,sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            text-rendering: optimizeLegibility;
+            font-size: 13px;
+            padding: 3px 15px;
+            text-align: left;
+            text-transform: initial;
+            letter-spacing: 0;
+            height: min-content; 
+            margin-top: 7px;
+            border-radius: 25px;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            line-height: 1.2em;
+            text-decoration: none!important;
+            background-color: #5737be;
+            color: white;
+            margin-left: 1rem; 
+            transition:  background-color 0.4s ease;
+            span{
+                font-size: 16px;
+                margin-left: 6px;
+            }  
+
+            &:hover{
+                background-color: #423276;
+                transition:  background-color 0.4s ease; 
+            }
+        }
+        .active-filter-button-size{
+            font-family: nunito sans,Helvetica,sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            text-rendering: optimizeLegibility;
+            font-size: 13px;
+            padding: 3px 15px;
+            text-align: left;
+            text-transform: initial;
+            letter-spacing: 0;
+            height: min-content; 
+            margin-top: 7px;
+            border-radius: 25px;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            line-height: 1.2em;
+            text-decoration: none!important;
+            background-color: #f06222;
+            color: white;
+            margin-left: 1rem; 
+            transition:  background-color 0.4s ease;
+            span{
+                font-size: 16px;
+                margin-left: 6px;
+            } 
+
+            &:hover{
+                background-color: #ab3e0d;
+                transition:  background-color 0.4s ease; 
+            }
+        }
+        
+        
+    }   .clear-filters{
+        width: min-content;
+        white-space: nowrap;
+        cursor: pointer;
+        .active-filter-text{
+            font-family: nunito sans,Helvetica,sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            text-rendering: optimizeLegibility;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #999;
+            margin-top: 0;
+        }
+    }
+    
+        }
+        .location-dropdown{
+            width: 425%;
+            position: absolute;
+        }
+
+        .filter-wrapper{
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        border-radius: 5px!important;
+        width: fit-content;
+        box-shadow: 5px 5px 10px rgba(24, 24, 24, 0.2);
+        padding: 0;
+        height: 60px;
+        padding-left: 2rem;
+
+        .filter-name{
+            font-family: Nunito Sans,Helvetica,sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            font-style: normal;
+            text-rendering: optimizeLegibility;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #333;
+            margin: 0;
+            width: 115px;
+            text-align: initial;
+            align-self: center;
+        }
+        .filter-options{
+            background-color: #fff;
+            position: relative;
+            height: max-content;
+            width: 172px;
+            border: 1px solid #ccc;
+            border-top: 0;
+            border-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            height: -webkit-fill-available;
+
+            &:hover{
+                background-color: rgb(247, 240, 225);
+            }
+
+        .click-container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            cursor: pointer;
+            span{
+                display: flex;
+                align-items: center;
+                height: -webkit-fill-available;
+                margin-left: 0.5rem;
+            }
+
+            i{
+                align-self: center;
+                margin-right: 0.5rem;
+            }
+        }
+            .location-dropdown{
+            
+                position: absolute;
+                width: 315%;
+                height: 215px;
+                top: 58px;
+                left: 0;
+                z-index: 5;
+                background-color: white;
+                border: 1px solid #ccc;
+
+                .suggestion-location{
+                    position: absolute;
+                    width: 277px;
+                    height: 100%;
+                }
+
+                .dropdown-list-location{
+                    list-style-type: none;
+                    padding-left: 0;
+                    margin: 0;
+                    padding: 15px 10px;
+                    
+                    .apply-info{
+                        text-align: initial;
+                        font-family: Nunito Sans,Helvetica,sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        font-style: normal;
+                        text-rendering: optimizeLegibility;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        color: #333;
+                        padding: 0 10px 10px;
+                    }
+
+                    .apply-filter-section-location{
+                        display: grid;
+    
+                        grid-template-columns: 1fr 1fr 1fr;
+
+                    .apply-filter-location{
+                        border-radius: 10px;
+                        font-family: nunito sans,Helvetica,sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+                        text-rendering: optimizeLegibility;
+                        width: 33.33333%;
+                        padding: 5px 5px 5px 10px;
+                        text-align: initial;
+                        font-size: 15px;
+                        width: fit-content;
+                        border: 1px solid transparent;
+                        transition:  0.7s ease;
+                        cursor: pointer;
+
+                        &:hover{
+                            border:black;
+                            border-style: solid;
+                            border-width: 0.7px;
+                            border-radius: 20px;
+                            transition:  0.7s ease;
+                        }
+                    }
+                }
+                .apply-search-location-city{
+                    width: 100%;
+                    margin-top: 15px;
+                    border-top: 1px solid #ccc;
+                    display: flex;
+                    align-items: center;
+                    height: 70px;
+
+                    .search-location-title{
+                        text-align: initial;
+                        font-family: Nunito Sans,Helvetica,sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        font-style: normal;
+                        text-rendering: optimizeLegibility;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        color: #333;
+                        margin-right: 1rem;
+    
+                    }
+                    form{
+                        width: 100%;
+                        input{
+                            width: 250px;
+                            border: black;
+                            border-style: solid;
+                            border-width: 2px;
+                            padding: 7px 12px;
+                            font-family: georgia,Georgia,Serif;
+                            font-weight: 400;
+                            font-style: normal;
+                            text-rendering: optimizeLegibility;
+                            border-radius: 0;
+                            height: auto;
+                            font-size: 15px;
+                            :-moz-placeholder{
+                                color: black !important;
+                            }
+                            
+                            ::-moz-placeholder{
+                                color:black !important;
+                            }
+                            
+                        }
+                    }
+                }
+                }
+            }}
+            .filter-options-2{
+            border-top: 0;
+            border-bottom: 0;
+            height: -webkit-fill-available;
+            background-color: #fff;
+            position: relative;
+            width: 172px;
+            display: flex;
+            justify-content: space-between;
+            &:hover{
+                background-color: rgb(247, 240, 225);
+            }
+    
+            .click-container-2{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                cursor: pointer;
+                span{
+                    display: flex;
+                    align-items: center;
+                    height: -webkit-fill-available;
+                    margin-left: 0.5rem;
+                }
+    
+                i{
+                    align-self: center;
+                    margin-right: 0.5rem;
+                }
+            }
+            .Industry-dropdown{
+            
+                position: absolute;
+                width: 315%;
+                height: 240px;
+                top: 58px;
+                left: 0;
+                z-index: 5;
+                background-color: white;
+                border: 1px solid #ccc;
+
+                .dropdown-list-industry{
+                    list-style-type: none;
+                    padding-left: 0;
+                    margin: 0;
+                    padding: 15px 10px;
+                    
+                    .apply-info{
+                        text-align: initial;
+                        font-family: Nunito Sans,Helvetica,sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        font-style: normal;
+                        text-rendering: optimizeLegibility;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        color: #333;
+                        padding: 0 10px 10px;
+                    }
+
+                    .apply-filter-section-industry{
+                        display: grid;
+                        align-items: center;
+                        grid-template-columns: 1fr 1fr 1fr;
+
+                    .apply-filter-industry{
+                        font-family: nunito sans,Helvetica,sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+                        text-rendering: optimizeLegibility;
+                        width: 33.33333%;
+                        padding: 5px 5px 5px 10px;
+                        text-align: initial;
+                        font-size: 14px;
+                        width: fit-content;
+                        border-radius: 20px;
+                        border: 1px solid transparent;
+                        transition:  0.7s ease;
+                        cursor: pointer;
+
+                        &:hover{
+                            border:black;
+                            border-style: solid;
+                            border-width: 0.7px;
+                            border-radius: 20px;
+                            transition:  0.7s ease;
+                        }
+                    }
+                }
+                
+                }
+            }}
+            .filter-options-3{
+            background-color: #fff;
+            position: relative;
+            height: 35px;
+            width: 172px;
+            border: 1px solid #ccc;
+            border-top: 0;
+            border-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            height: -webkit-fill-available;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            &:hover{
+                background-color: rgb(247, 240, 225);
+            }
+    
+            .click-container-3{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                cursor: pointer;
+                span{
+                    display: flex;
+                    align-items: center;
+                    height: -webkit-fill-available;
+                    margin-left: 0.5rem;
+                }
+    
+                i{
+                    align-self: center;
+                    margin-right: 0.5rem;
+                }
+            }
+            .size-dropdown{
+            
+                position: absolute;
+                width: 290%;
+                height: 80px;
+                top: 58px;
+                left: 0;
+                z-index: 5;
+                background-color: white;
+                border: 1px solid #ccc;
+
+                .dropdown-list-size{
+                    list-style-type: none;
+                    padding-left: 0;
+                    margin: 0;
+                    padding: 15px 10px;
+                    
+                    .apply-info{
+                        text-align: initial;
+                        font-family: Nunito Sans,Helvetica,sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                        font-style: normal;
+                        text-rendering: optimizeLegibility;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        color: #333;
+                        padding: 0 10px 10px;
+                    }
+
+                    .apply-filter-section-size{
+                        display: grid;
+                        align-items: center;
+                        grid-template-columns: 1fr 1fr 1fr;
+
+                    .apply-filter-size{
+                        font-family: nunito sans,Helvetica,sans-serif;
+                        font-weight: 500;
+                        font-style: normal;
+                        text-rendering: optimizeLegibility;
+                        width: 33.33333%;
+                        padding: 5px 5px 5px 10px;
+                        text-align: initial;
+                        font-size: 14px;
+                        width: fit-content;
+                        border-radius: 20px;
+                        border: 1px solid transparent;
+                        transition:  0.7s ease;
+                        cursor: pointer;
+
+                        &:hover{
+                            border:black;
+                            border-style: solid;
+                            border-width: 0.7px;
+                            border-radius: 20px;
+                            transition:  0.7s ease;
+                        }
+                    }
+                }
+                
+                }
+            }}
+        
+
+    }
+    } 
+}
+

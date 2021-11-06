@@ -1,0 +1,98 @@
+/* basic styles */
+
+.skeleton {
+    opacity: 0.7;
+    background:#ddd;
+    margin: 10px 0;
+    border-radius: 4px;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading{
+    0% {
+        background-color: hsl(200, 20%, 75%);
+    }
+    100% {
+        background-color: hsl(200, 20%, 90%);
+    }
+}
+
+.skeleton.text {
+    width: 60%;
+    height: 12px;
+}
+
+.skeleton.title {
+    width: 40%;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+.skeleton.logo {
+    width:120px;
+    height: 80px;
+}
+
+.skeleton-wrapper {
+    padding: 10px 0px;
+}
+.skeleton-listing{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f2f2f2;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+}
+.skeleton-upper-section{
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+}
+.skeleton.button-small{
+width: 92.69px;
+height:48px ;
+margin-right: 2rem;
+}
+
+.skeleton.button-large{
+    width: 184px;
+    height:49px ;
+    }
+
+.skeleton-lower-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo-title{
+    display: flex;
+}
+
+.skeleton-company-listing{
+
+    max-width: 400px;
+    margin-top: 37px;
+    height: 432px;
+    width: 380px;
+    
+}
+
+.skeleton.skeleton-image-company{
+    height: 280px;
+}
+
+.logo-title-company{
+    width: 70%;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 2rem;
+}
+
+.skeleton.title-company{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+}

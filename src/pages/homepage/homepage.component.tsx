@@ -1,63 +1,47 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import './homepage.styles.scss';
-import Axios from 'axios';
 import { useHistory } from "react-router-dom";
 import { withRouter } from 'react-router-dom';
 import { ReactComponent as SearchIcon} from '../../assets/search-icon.svg';
 import LordIcon from '../../components/lottie/LordIcon';
 import DocumentIcon from '../../components/lottie/DocumentIcon';
 import ConfettiIcon from '../../components/lottie/ConffetiIcon';
+import { useContext } from 'react';
+import HomePageContext from '../../context/HomePageContext';
+import { ReactComponent as NameIcon} from '../../assets/jobiendo_logo_3.svg';
+import { NavLink } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+import Hamburger from 'hamburger-react';
+import HamburgerMenu from '../../components/hamburger-menu/hamburger-menu.component';
 
 const HomePage =() => {
-  
-    
-    const [search, setSearch] =useState("");
-    const [results, setResults] =useState([]);
-    const [location, setLocation] =useState("");
+   
     const [hoover1, setHoover1]=useState("");
     const [hoover2, setHoover2]=useState("");
     const [hoover3, setHoover3]=useState("");
+    const [searchHolder, setSearchHolder]=useState("");
+    const [locationHolder, setLocationHolder]=useState("");
     const history = useHistory();
+    const {search,setSearch,location,setLocation} =useContext(HomePageContext);
+    const path = useLocation().pathname;
+    const [isOpen, setOpen] = useState(false)
+    
+    
     
    
-    useEffect( ()=>{
-        async function getJobView(){
-          try {
-          const jobResponse = await Axios.get(`https://www.themuse.com/api/public/jobs?category=${search}&location=${location}&page=1`);
-          setResults(
-            jobResponse.data.results.map((item:any) =>{
-              return (
-                [
-                  item.name,
-                  item.company.name,
-                  item.locations[0].name,
-                  item.publication_date.slice(0, 10),
-                  item.refs.landing_page,
-                  item.contents
-                ]
-              )
-            })
-          )
-          
-          
-        } catch (error) {
-          console.log(error)
-        }
-      }
-          if (search||location !== ''){
-            getJobView();
-          }
-  
-      } ,[search,location]);
-
-  
       return(
       <section className="homepage">
-       
-        <div className="navbar">
-        <h1 className="logo"><span className="jobb">Job</span><span className="iando">iando</span></h1>
-        </div>
-       
+        <div className="image-wraper"/>
+        <NavLink to="/" style={{height:"fit-content", width:"fit-content",position:"absolute",left:"3rem",top:"3.95rem",zIndex:2}}>
+        <NameIcon className="logo-search-list"/>
+        </NavLink>
+        <HamburgerMenu info={isOpen}/>
+        <Hamburger toggled={isOpen} toggle={setOpen} size={26}/>
+        <div className='header-logo-choice-container'>
+             <NavLink className ='choice' to='/' style={{background: (path=== "/") ? 'orange' : "white"}}> HOME </NavLink>
+             <NavLink className ='choice' to='/search'> JOBS </NavLink>
+             <NavLink className ='choice' to='/company'> COMPANIES </NavLink>
+          </div>
       <div className="homepage-form">
       <div className="title-container">
         <h1 className="title-homepage">Find the most exciting jobs </h1>
@@ -67,11 +51,11 @@ const HomePage =() => {
     <form
        onSubmit={(e:React.ChangeEvent<any>) => {
         e.preventDefault();
+        e.stopPropagation()
+        setSearch(searchHolder);
+        setLocation(locationHolder);
         history.push({
           pathname: '/search',
-          state: {
-              data: results,
-          }
         })
        
          }}
@@ -79,28 +63,28 @@ const HomePage =() => {
       <SearchIcon className="search-icon"/>
       <input 
       className ="search-input"
-      type={search}
-      value={search}
+      type="text"
+      value={searchHolder}
       placeholder={"Find a carrer in ..."}
-      onChange={(e: React.ChangeEvent<HTMLInputElement>) =>setSearch(e.target.value)}
+      onChange={(e: React.ChangeEvent<HTMLInputElement>) =>setSearchHolder(e.target.value)}
       list="categories"
       />
        <datalist id="categories">
        <option value="Marketing"/>
        <option value="Sales"/>
        <option value="Retail"/>
-       <option value="Project Management"/>
+       <option  className="datalist-value" value="Project Management"/>
        <option value="Software Engineer"/>
        <option value="Education"/>
-       <option value="IT"/>
+       <option className="datalist-value" value="IT"/>
        </datalist>
 
        <input 
        className="search-location"
-      type={search}
-      value={location}
+      type="text"
+      value={locationHolder}
       placeholder={"Location"}
-      onChange={(e: React.ChangeEvent<HTMLInputElement>) =>setLocation(e.target.value)}
+      onChange={(e: React.ChangeEvent<HTMLInputElement>) =>setLocationHolder(e.target.value)}
       list="Locations"
       />
        <datalist id="Locations">
@@ -113,16 +97,7 @@ const HomePage =() => {
        <option value="Austin, TX"/>
        <option value="Chicago, IL"/>
        </datalist>
-       <button  className="search-submit-button" type={'submit'} onClick={()=>{
-    history.push({
-      pathname: '/search',
-      state: {
-          data: results,
-      }
-    })
-   
-      }
-    }>
+       <button  className="search-submit-button" type="submit" >
           See job</button>
       </form>
     

@@ -1,6 +1,208 @@
+.job-photo-header{
+    background-image: url("../../assets/background-job-title.jpg");
+    background-size: cover;
+    /* min-height: 100%; */
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 51%;
+    position: absolute;
+    height: 200px;
+    top: 0;
+    position:absolute;
+    border: orange;
+    border-style: solid;
+    border-width: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
 .job-detail{
     width: 80%;
+    text-align: initial;
     ul{
     list-style: none;
     }
+    margin: 0 auto;
+   margin-top: 21rem;
+   line-height: 25px;
+   margin-bottom: 5rem;
+   cursor: default;
+
+   b{
+       font-size: 20px;
+   } 
+
+   .text-image{
+    display: flex;
+    p{
+        padding-right: 3rem;
+        margin-top: 0;
+    }
+   .image-job-detail{
+    object-fit: cover;
+    width: 600px;
+    align-self: baseline;
+}
+.section-text{
+    padding-right: 4rem;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    font-family: georgia,times,Times New Roman,serif;
+
+    pre{
+        white-space: break-spaces;
+    }
+} 
+}
+
+   .upper-section{
+    display: flex;
+    justify-content: space-between;
+
+    .job-details-title{
+        width: 60%;
+        font-weight: 600;
+        line-height: 40px;
+        font-size: 34px;
+        margin-bottom: 1.3rem;
+        font-family: Barlow Semi Condensed,sans-serif;
+    }
+    .job-detail-apply-muse{
+        border: 1px solid black;
+        font-weight: 700;
+        font-size: 17px;
+        padding: 1rem;
+        border-radius: 5px;
+        width: fit-content;
+        background-color:white;
+        text-decoration: none;
+        color: black;
+        height: fit-content;
+        position: relative;
+        top: 14px;
+        
+
+        &:hover{
+            background-color: black;
+            color: #fff!important;
+            }
+        }
+    
+    }
+
+    .job-tags{
+        display: flex;
+        margin-bottom: 4rem;
+
+        .job-tags-location{
+            margin-right: 2rem;
+            background-color: #ECEBEB;
+    border-radius: 20px;
+    width: -moz-fit-content;
+    font-size: 16px;
+    width: fit-content;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    margin-right: 0.7rem;
+    font-family: Barlow Semi Condensed,sans-serif;
+
+    .tags-location-icon{
+        height: 16px;
+        vertical-align: baseline;
+        top: 2.11px;
+        margin-right: 4px;
+        position: relative;
+    }
+        }
+
+        .job-tags-compagny{
+            background-color: #ECEBEB;
+    border-radius: 20px;
+    font-size: 16px;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    margin-right: 0.7rem;
+    font-family: Barlow Semi Condensed,sans-serif;
+        }
+        .tags-company-icon{
+            height: 16px;
+        vertical-align: baseline;
+        top: 2.11px;
+        margin-right: 4px;
+        position: relative;
+
+        }
+    }
+}
+
+.image-logo-job-detail{
+    width: 310px;
+    position: absolute;
+    top: 126px;
+    left: 10%;
+    border: orange;
+    border-style: solid;
+    border-width: 3px;
+    background-color: white;
+    padding: 0.7rem;
+
+}
+
+.bottom-apply-muse{
+    display: flex;
+    
+    
+
+.job-detail-apply-muse-bottom{
+   
+    border: 1px solid black;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 1rem;
+    border-radius: 5px;
+    width: fit-content;
+    background-color:white;
+    text-decoration: none;
+    color: black;
+    height: fit-content;
+    position: relative;
+    top: 14px;
+    
+
+    &:hover{
+        background-color: black;
+        color: #fff!important;
+        }
+    }
+
+}
+.company-card-link-job{
+    border: 1px solid orange;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color:white;
+    text-decoration: none;
+    color: orange;
+    height: fit-content;
+    position: relative;
+    top: 14px;
+    width: fit-content;
+    
+
+    &:hover{
+        background-color: orange;
+        color: #fff!important;
+        }
+
 }

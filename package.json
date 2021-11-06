@@ -12,12 +12,15 @@
     "@types/react-dom": "^17.0.9",
     "@types/react-router": "^5.1.16",
     "axios": "^0.21.4",
+    "hamburger-react": "^2.4.1",
     "lord-icon-element": "^2.1.0",
     "lottie-web": "^5.7.13",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-html-parser": "^2.0.2",
+    "react-loading-skeleton": "^2.2.0",
+    "react-places-autocomplete": "^7.3.0",
     "react-router": "^5.2.1",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
@@ -51,6 +54,7 @@
   "devDependencies": {
     "@types/react-helmet": "^6.1.2",
     "@types/react-html-parser": "^2.0.2",
+    "@types/react-places-autocomplete": "^7.2.9",
     "@types/react-router-dom": "^5.1.9"
   }
 }

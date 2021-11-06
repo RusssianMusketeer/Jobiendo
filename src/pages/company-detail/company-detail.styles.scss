@@ -1,0 +1,172 @@
+.company-detail-section{
+    position: relative;
+    margin-top: 13rem;
+    padding-top: 3rem;
+    cursor: default;
+
+    .company-detail-title-description{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+
+    .company-image-detail{
+        width: 550px;
+    }
+    .company-logo-name-div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    .company-text-description{
+
+        p{
+            position: relative;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 28px;
+            font-family: georgia,times,Times New Roman,serif; 
+            z-index: 0;
+            text-align: left;
+        }
+    }
+
+    .company-div-logo-title{
+        display: flex;
+        align-items: center;
+    .company-logo-detail-div{
+        width: fit-content;
+        position: relative;
+        height: fit-content;
+        
+
+    .company-logo-detail{
+        width: 300px;
+        padding: 0.7rem;
+        height: fit-content;
+    border: 3px solid orange;
+    background-color: white;
+    }
+}
+    .company-detail-title-div{
+        height: min-content;
+        margin-left: 3rem;
+
+    .company-detail-title{
+        font-weight: 600;
+        font-size: 55px;
+        margin: 0;
+        margin-bottom: 1rem;  
+    }
+}
+    }
+}
+    
+}
+    .company-detail-location-industry-size{
+        margin-top: 2rem;
+        display: flex;
+        margin-bottom: 2rem;
+        
+    .company-size{
+        display: flex;
+        flex-direction: column;
+        font-family: nunito sans,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    width: min-content;
+    margin-right: 3rem;
+    
+    align-items: flex-start;
+    span{
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    p{
+        margin: 0;
+        font-family: barlow semi condensed,Helvetica,sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: #333;
+        display: flex;
+            svg{
+                margin-right: 0.3rem;
+            }
+    }
+    }
+    .company-location{
+        display: flex;
+        flex-direction: column;
+        font-family: nunito sans,Helvetica,sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        width: min-content;
+        margin-right: 3rem;
+        
+        align-items: flex-start;
+        span{
+            font-size: 15px;
+            white-space: nowrap;
+        }
+        p{
+            margin: 0;
+            font-family: barlow semi condensed,Helvetica,sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            color: #333;
+            display: flex;
+            svg{
+                margin-right: 0.3rem;
+            }
+        }
+    }
+    .company-industry{
+        display: flex;
+        flex-direction: column;
+        font-family: nunito sans,Helvetica,sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        width: min-content;
+        margin-right: 3rem;
+
+        align-items: flex-start;
+        span{
+            font-size: 15px;
+            white-space: nowrap;
+        }
+        p{
+            margin: 0;
+            font-family: barlow semi condensed,Helvetica,sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            color: #333;
+            display: flex;
+            svg{
+                margin-right: 0.3rem;
+            }
+        }
+    }
+    }
+    .company-image-description{
+        margin-top: 2rem;
+    }
+}
+
+.no-jobs{
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    font-family: georgia,times,Times New Roman,serif;
+    z-index: 0;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}

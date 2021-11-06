@@ -1,0 +1,113 @@
+.search-list{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.7)),url("../../assets/search-background-3.jpg");
+    background-size: cover;
+    max-height: 250px;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position: center ;
+    top: 0;
+    border-bottom: orange;
+    border-width: 13px;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    height: 100%;
+    position: absolute;
+    
+};
+.header-logo-choice-container{
+        
+    display: flex;
+    top: 4.5rem;
+    position: absolute;
+    right: 3rem;
+    @media (max-width:750px){
+        display: none;
+    }
+    a{
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 17px;
+    overflow: hidden;
+    background: linear-gradient(to right,orange,orange 50%, rgb(239, 242, 242) 50%);
+    background-clip: text;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    &:hover {
+        background-position: 0 100%;
+      }
+    }
+}
+
+.searching{
+    display: flex;
+    width: 93%;
+    margin: 0 auto;
+}
+
+.params-search{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.jobb{
+    color: orange;
+    font-style: italic;
+}
+
+.iando{
+    color: white;
+    font-style: italic;
+}
+
+.logo-search-list{
+    width: 180px;
+    display: flex;
+    top: 3rem;
+    left: 3rem;
+
+    @media (max-width:950px){
+        width: 130px;
+        top: 3.8rem;
+    }
+    @media (max-width:410px){
+        width: 145px;
+        
+        
+    }
+    
+    
+}
+.hamburger-react{
+    color: white;
+    display: flex;
+    z-index: 4;
+  top: 3.7rem;
+  position: absolute!important;
+  right: 4rem;
+  @media (min-width:751px){
+      display: none;
+  }
+  @media (max-width:550px){
+      right: 44px;
+      
+  }
+  
+  @media (max-width:425px){
+      right: 1rem;
+      
+  }
+  @media (max-width:360px){
+      right: 0.5rem;
+      
+  }
+}
+
+
+

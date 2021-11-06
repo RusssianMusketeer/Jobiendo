@@ -1,0 +1,19 @@
+.search-params{
+    width: 100%;
+    text-align: initial; 
+    font-size: 13px;
+
+    .job-title{
+        margin: 0;
+        cursor: default;
+    }
+
+    .checkbox{
+        margin-top: 0.5rem;
+        
+        input {
+            margin-left:0 ;
+            cursor: pointer;
+        }
+    }
+}

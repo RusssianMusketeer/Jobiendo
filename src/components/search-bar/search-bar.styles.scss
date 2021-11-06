@@ -1,0 +1,78 @@
+.search-bar{
+    margin: 0 auto;
+    margin-top: 14rem;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+    z-index: 3;
+    position: relative;
+    
+
+.search-icon{
+    vertical-align: top;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 5px 5px 10px rgba(24, 24, 24, 0.2);
+    }
+    
+
+    .search-input{
+        font-family: Nunito Sans,Helvetica,sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        background-color: #fff;
+        border: none;
+        color: #333;
+        height: 60px;
+        outline: none;
+        padding: 0 48px 0 10px;
+        border-right: 1px solid #e9e9e9;
+        width: 32%;
+        box-shadow: 5px 5px 10px rgba(24, 24, 24, 0.2);
+        
+    }
+
+    .search-location{
+        font-family: Nunito Sans,Helvetica,sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        background-color: #fff;
+        border: none;
+        color: #333;
+        height: 60px;
+        outline: none;
+        padding: 0 48px 0 10px;
+        width: 18%;
+        box-shadow: 5px 5px 10px rgba(24, 24, 24, 0.2);
+        
+    }
+
+    .search-submit-button{
+        padding: 0;
+        border-radius: 0 4px 4px 0;
+        width: 11%;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        letter-spacing: 1px;
+        margin: 0;
+        border: none;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        transition: background .3s ease-out;
+        background-color: #3852d4;
+        color: #fff;
+        height: 60px;
+        vertical-align: top;
+        box-shadow: 5px 5px 10px rgba(24, 24, 24, 0.2);
+        &:hover{
+            background-color: #203787;
+            transition: background .3s ease-out;
+        }
+    }
+}
