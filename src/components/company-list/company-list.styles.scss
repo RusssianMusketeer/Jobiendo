@@ -17,12 +17,9 @@
     max-width: 400px;
     height: 432px;
     border-bottom: orange;
-    border-width: 6px;
-    border-style: solid;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
+    border-width: 0px 0px 6px 0px;
     border-radius: 6px;
+    border-style: solid;
     transition: border-color 700ms ease-in;
     box-shadow: 0 0 15px #ccc;
     transition:  1s ease;
