@@ -19,7 +19,7 @@ const JobDetail = () => {
         <section>
             {console.log(location.state.company_info )}
         <div className="job-photo-header"/> 
-        <NavLink to="/">
+        <NavLink to="/" style={{height:"fit-content", width:"fit-content",position:"absolute",left:"3rem",top:"3.95rem",zIndex:2}}>
         <NameIcon className="logo-search-list"/>
         </NavLink>
         <div className='header-logo-choice-container'>
