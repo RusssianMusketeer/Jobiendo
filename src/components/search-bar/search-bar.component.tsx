@@ -11,6 +11,7 @@ const SearchBar =() => {
     const [locationHolder, setLocationHolder]=useState("");
 
     return(
+        <div style={{margin:"0 auto",width:"93%"}}>
             <form className="search-bar"
        onSubmit={(e:React.ChangeEvent<any>) => {
         e.preventDefault();
@@ -58,6 +59,7 @@ const SearchBar =() => {
        <button  className="search-submit-button" type="submit" >
           See job</button>
       </form>
+      </div>
     )
 }
 

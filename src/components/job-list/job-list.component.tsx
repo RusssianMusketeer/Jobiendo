@@ -128,8 +128,10 @@ const JobList = (props:any) => {
         <h1  className="job-title" key={item[0]}>{item[0]}</h1>
         <div className="descriptions">
         <p className="job-location"> {item[1]}</p>
+        <div style={{display:"flex",marginTop:"16px",alignSelf:"baseline"}}>
         <MapIcon className="map-icon"/>
-        <p className="job-local"> {item[2]}</p>
+        <p className="job-local" style={{marginTop:"0", textAlign:"left"}}> {item[2]}</p>
+        </div>
         </div>
         </div>
         </div>
