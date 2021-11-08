@@ -183,7 +183,7 @@
             border-bottom: 0;
             display: flex;
             justify-content: space-between;
-            height: -webkit-fill-available;
+            height: auto;
 
             &:hover{
                 background-color: rgb(247, 240, 225);
@@ -204,6 +204,7 @@
             i{
                 align-self: center;
                 margin-right: 0.5rem;
+                
             }
         }
             .location-dropdown{
@@ -348,6 +349,7 @@
                 i{
                     align-self: center;
                     margin-right: 0.5rem;
+                    
                 }
             }
             .Industry-dropdown{
@@ -444,6 +446,7 @@
                 i{
                     align-self: center;
                     margin-right: 0.5rem;
+                    
                 }
             }
             .size-dropdown{
