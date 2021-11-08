@@ -151,7 +151,7 @@
 .arrow-section{
     display: flex;
     justify-content: center;
-    align-items: self-end;
+    
     margin-top: 2rem;
     width: 87.7%;
     margin-bottom: 1.5rem;
@@ -176,12 +176,16 @@
     cursor: pointer;
 	
 	&.left {
-		left: 0;
+		position: relative;
+        top: 29px;
+        
 		transform: translate3d(0,-50%,0) rotate(-135deg);
 	}
 
 	&.right {
-		right: 0;
+		position: relative;
+        top: 29px;
+        left: 5px;
 		transform: translate3d(0,-50%,0) rotate(45deg);
 	}
 	
