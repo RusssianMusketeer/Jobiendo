@@ -66,12 +66,13 @@ const JobDetail = () => {
         </div>
         </div>
         <div className="text-image">
+        <div style={{float:"right",marginLeft:"2rem"}}>
+        <img className="image-job-detail" alt="company" src={location.state.image1}></img>
+        </div>
         <div className="section-text">
         { ReactHtmlParser(location.state.item) }
         </div>
-        <div>
-        <img className="image-job-detail" alt="company" src={location.state.image1}></img>
-        </div>
+        
         </div>
         <div className="bottom-apply-muse">
         <Link className="company-card-link-job" style={{marginRight:"3rem"}} to={{pathname: "./company-detail",
