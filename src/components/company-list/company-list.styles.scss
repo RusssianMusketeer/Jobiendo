@@ -77,15 +77,17 @@ transform: scale(1.02);
     display: flex;
     justify-content: center;
     margin: 2rem auto 0px;
-    margin-bottom: 1.5rem;
     cursor: default;
     width: -webkit-min-content;
     align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 
     .page-number{
         font-size: 18px;
         font-weight: 600;
         margin-top: 0;
+        width: -webkit-max-content;
     }
 
 .arrow {

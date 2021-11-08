@@ -140,7 +140,7 @@ const CompanySearch =() => {
                         </ul>
                     </div> }
                          <div className="click-container"  onClick={() => {setToggle(!toggle); setToggle2(false);setToggle3(false)}}>
-                             <span>Location</span><i >&#9660;</i></div>
+                             <span>Location</span><div className="symbol">&#x25bc;</div></div>
                          </div>
                     <div className="filter-options-2" >
                     {toggle2 &&  <div className="Industry-dropdown" >
@@ -208,7 +208,7 @@ const CompanySearch =() => {
                         </ul>
                        </div>  }
                        <div className="click-container-2"  onClick={() => {setToggle2(!toggle2); setToggle(false);setToggle3(false)}}>
-                       <span>Industry</span><i >&#9660;</i>
+                       <span>Industry</span><div className="symbol">&#9660;</div>
                         </div> 
                         </div>
                     <div className="filter-options-3">
@@ -231,7 +231,7 @@ const CompanySearch =() => {
                     </ul>
                     </div>}
                     <div className="click-container-3" onClick={() => {setToggle3(!toggle3); setToggle(false);setToggle2(false)}}>
-                    <span>Size</span><i >&#9660;</i>
+                    <span>Size</span><div className="symbol">&#9660;</div>
                         </div> 
                         </div>
                         </div>
