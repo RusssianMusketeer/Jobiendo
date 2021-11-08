@@ -76,12 +76,11 @@ transform: scale(1.02);
 .arrow-section-company{
     display: flex;
     justify-content: center;
-    align-items: self-end;
-    margin: 0 auto;
-    margin-top: 2rem;
-    width: 87.7%;
+    margin: 2rem auto 0px;
     margin-bottom: 1.5rem;
     cursor: default;
+    width: -webkit-min-content;
+    align-items: center;
 
     .page-number{
         font-size: 18px;
