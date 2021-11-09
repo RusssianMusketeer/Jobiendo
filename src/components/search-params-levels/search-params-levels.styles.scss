@@ -8,6 +8,15 @@
         cursor: default;
     }
 
+    .Levels-title{
+        margin: 0;
+        cursor: default;
+        font-family: "EB Garamond", serif;
+        font-size: 30px;
+        color: orange;
+        margin-bottom: 1.295rem;
+    }
+
     .checkbox-levels{
         margin-top: 0.5rem;
         input {
@@ -16,3 +25,48 @@
         }
     }
 }
+.params-level-mobil{
+    text-align: initial;
+    font-size: 13px;
+    margin-left: 2rem;
+    .Levels-title{
+        margin-top: 2rem;
+        margin-bottom: 0;
+        cursor: default;
+    }
+
+    .Levels-title-mobil{
+        margin: 0;
+        cursor: default;
+        font-family: "EB Garamond", serif;
+        font-size: 30px;
+        color: orange;
+        margin-bottom: 1.295rem;
+        @media (max-width:650px){
+            font-size: 20px;
+        }
+    }
+
+    .checkbox-levels-mobil{
+        margin-top: 0.5rem;
+        input {
+            margin-left:0 ;
+            cursor: pointer;
+            margin-bottom: 0;
+            margin-right: 9px;
+            @media (max-width:650px){
+                margin-right: 4px;
+            }
+        }
+        label{
+            font-weight: 600 !important;
+        font-size: 16px;
+        @media (max-width:650px){
+            font-size: 14px;
+        }
+        @media (max-width:450px){
+            font-size: 12px;
+        }
+}
+        }
+    }

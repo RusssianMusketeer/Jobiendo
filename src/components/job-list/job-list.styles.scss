@@ -8,6 +8,11 @@
     box-shadow: 0 0 5px #ccc;
     max-width: 1300px;
 
+    @media (max-width:1015px){
+      
+        width: auto;
+    }
+
     &:hover{
         box-shadow: 20px 20px 30px rgba(24, 24, 24, 0.2); 
 
@@ -22,6 +27,20 @@
         .image-logo{
             height: 68px;
             margin-right: 2rem;
+
+            @media (max-width:750px){
+                object-fit: contain;
+                width: 130px;
+                margin-right: 1rem;   
+            }
+
+            @media (max-width:450px){
+                margin-right: 0.5rem;
+                width: 110px;   
+            }
+            @media (max-width:380px){
+                width: 100px;   
+            }
             
         }
         .job-title{
@@ -29,9 +48,29 @@
             font-size: 23px;
             align-self: self-start;
             margin: 0;
+            font-weight: 800;
 
             @media (max-width:1350px){
                 font-size: 19px;    
+            }
+
+            @media (max-width:875px){
+                font-size: 14px;    
+            }
+            @media (max-width:660px){
+                font-size: 12px;    
+            }
+            @media (max-width:515px){
+      
+                font-size: 10px;
+            }
+
+    
+            @media (max-width:450px){
+                margin-top: 7px;  
+            }
+            @media (max-width:380px){
+                margin-top: 9px;   
             }
     
         }
@@ -40,6 +79,30 @@
 
     .descriptions{
         display: flex;
+        div{
+            @media (max-width:475px){
+                margin-top: 0!important;   
+            } 
+        }
+        p{
+            @media (max-width:475px){
+                margin-bottom: 6px!important;   
+            }
+        }
+
+        @media (max-width:900px){
+            font-size: 14px;    
+        }
+        @media (max-width:525px){
+            font-size: 12px;    
+        }
+        @media (max-width:475px){
+            flex-direction: column;    
+        }
+        @media (max-width:415px){
+            font-size: 11px;    
+        }
+        
 
         .map-icon{
             height: 14px;
@@ -55,6 +118,11 @@
         text-align: left;
         margin-right: 1.5rem;
         width: min-content;
+
+        @media (max-width:675px){
+           
+            margin-right: 0.2rem;   
+        }
     }
     .lower-part-listing{
         display: flex;
@@ -78,16 +146,58 @@
         font-weight: 600;
         margin-right: 0.7rem;
 
+        @media (max-width:675px){
+            font-size: 13px;
+            padding-right: 0.6rem;
+            padding-left: 0.6rem;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+                
+        }
+        @media (max-width:425px){
+            font-size: 12px;
+            padding-right: 0.3rem;
+            padding-left: 0.3rem;
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
+                
+        }
+        @media (max-width:390px){
+            font-size: 10px;
+            
+                
+        }
+
         }
 
     .job-posting-date{
         color: black;
         text-align: right;
+        @media (max-width:675px){
+            font-size: 13px;
+        }
+        @media (max-width:515px){
+            font-size: 11px;
+        }
     }
 
     .button-job-container{
         align-self: center;
         display: flex;
+
+        @media (max-width:675px){
+            flex-direction: column;
+        }
+
+        @media (max-width:450px){
+            margin-top: 0.5rem;
+            align-self: baseline;
+        }
+        @media (max-width:380px){
+            margin-top: 0.6rem;
+        }
+
+        
 
         .view-job-button{
         border: 1px solid #3852d4;
@@ -100,6 +210,30 @@
         font-weight: 700;
         font-size: 12px;
         text-decoration: none;
+
+
+        @media (max-width:750px){
+            font-size: 10px;
+            padding: 0.8rem;
+            align-self: center;    
+        }
+        @media (max-width:675px){
+            align-self: flex-start;
+            margin-bottom: 0.5rem;
+
+        }
+        @media (max-width:550px){
+            font-size: 9px;
+            padding: 0.7rem;  
+        }
+        @media (max-width:450px){
+            font-size: 8px;
+            padding: 0.6rem;  
+        }
+        @media (max-width:380px){
+            font-size: 7px;
+            padding: 0.5rem;  
+        }
         
 
         &:hover{
@@ -119,6 +253,30 @@
         text-decoration: none;
         color: black;
         height: fit-content;
+
+        @media (max-width:750px){
+            font-size: 10px;
+            padding: 0.8rem;
+            align-self: center;    
+        }
+
+        @media (max-width:675px){
+            width: fit-content;
+
+        }
+        @media (max-width:550px){
+            font-size: 9px;
+            padding: 0.6rem; 
+            white-space: nowrap; 
+        }
+        @media (max-width:450px){
+            font-size: 8px;
+            padding: 0.6rem;  
+        }
+        @media (max-width:380px){
+            font-size: 7px;
+            padding: 0.5rem;  
+        }
         
 
         &:hover{
@@ -163,6 +321,10 @@
     width: 87.7%;
     margin-bottom: 1.5rem;
     cursor:default;
+    @media (max-width:1016px){
+      
+        width: auto;
+    }
 
     .page-number{
         font-size: 18px;
@@ -181,6 +343,11 @@
     border-bottom: 0;
     border-left: 0;
     cursor: pointer;
+
+    @media (max-width:500px){
+      
+        height: 4vmin;
+    }
 	
 	&.left {
 		position: relative;
@@ -192,7 +359,6 @@
 	&.right {
 		position: relative;
         top: 29px;
-        left: 5px;
 		transform: translate3d(0,-50%,0) rotate(45deg);
 	}
 	

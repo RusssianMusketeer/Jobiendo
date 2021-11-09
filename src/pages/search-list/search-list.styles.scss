@@ -40,17 +40,55 @@
       }
     }
 }
+.button-filters{
+    padding: 0;
+        border-radius: 5px;
+        width: 95%;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        letter-spacing: 1px;
+        margin: 0;
+        border: none;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        transition: background .3s ease-out;
+        background-color: #3852d4;
+        color: #fff;
+        height: 60px;
+        vertical-align: top;
+        box-shadow: 5px 5px 10px rgba(24, 24, 24, 0.2);
+        &:hover{
+            background-color: #203787;
+            transition: background .3s ease-out;
+        }
+        @media (min-width:1016px){
+      
+            display: none;
+        }
+    }
 
 .searching{
     display: flex;
     width: 93%;
     margin: 0 auto;
+    @media (max-width:1015px){
+        width: 95%;
+        
+    }
 }
 
 .params-search{
     display: flex;
     flex-direction: column;
     width: 20%;
+    @media (max-width:1015px){
+        display: none;
+        
+    }
 }
 
 .jobb{
@@ -62,7 +100,12 @@
     color: white;
     font-style: italic;
 }
-
+.jobiando-mobil-logo{
+    @media (max-width:425px){
+        top: 4.2rem!important;
+        left: 1rem!important;
+        width: 120px!important;
+    }
 .logo-search-list{
     width: 180px;
     display: flex;
@@ -80,6 +123,7 @@
     }
     
     
+}
 }
 .hamburger-react{
     color: white;
@@ -104,6 +148,86 @@
       right: 0.5rem;
       
   }
+}
+.search-filter-params-mobile{
+    background-color: #FAF8F5;
+    top: 0;
+    z-index: 4;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100 vh;
+    left: 0;
+    overflow: scroll;
+
+    svg{
+        height: 30px;
+        width: auto;
+        position: absolute;
+        right: 1rem;
+        top: 20px;
+        cursor: pointer;
+        }
+    
+
+    @media (min-width:1016px){
+        display: none!important;
+        
+    }
+    
+
+
+    .search-filter-mobile-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 55%;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 22px #ccc;
+    @media (max-width:800px){
+        width: 70%;
+    }
+    
+
+    }
+    .button-filters-mobil{
+        padding: 0;
+        border-radius: 10px;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        letter-spacing: 1px;
+        margin: 0;
+        border: none;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        transition: background .3s ease-out;
+        background-color: #3852d4;
+        color: #fff;
+        height: 60px;
+        vertical-align: top;
+        box-shadow: 5px 5px 10px rgba(24, 24, 24, 0.2);
+        width: 59%;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        @media (max-width:800px){
+            width: 76%;
+        }
+        
+        &:hover{
+            background-color: #203787;
+            transition: background .3s ease-out;
+        }
+    }
+    
 }
 
 

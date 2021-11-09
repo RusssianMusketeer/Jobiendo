@@ -37,7 +37,6 @@ const SearchBar =() => {
        <option value="Education"/>
        <option value="IT"/>
        </datalist>
-
        <input 
        className="search-location"
       type="text"
@@ -57,7 +56,7 @@ const SearchBar =() => {
        <option value="Chicago, IL"/>
        </datalist>
        <button  className="search-submit-button" type="submit" >
-          See job</button>
+          Search</button>
       </form>
       </div>
     )

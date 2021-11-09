@@ -35,6 +35,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
 
         @media (max-width:750px){
             flex-direction: column;
@@ -56,6 +57,7 @@ footer {
 
         @media (max-width:750px){
             align-self: center;
+            margin: 0 auto;
             margin-bottom: 1rem;
         }
         &:hover {

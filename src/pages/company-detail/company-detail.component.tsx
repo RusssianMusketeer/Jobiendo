@@ -24,7 +24,7 @@ const CompanyDetail = () => {
     return (
         <section>
             <div className="job-photo-header"/> 
-            <NavLink to="/" style={{height:"fit-content", width:"fit-content",position:"absolute",left:"3rem",top:"3.95rem",zIndex:2}}>
+            <NavLink className="jobiando-mobil-logo" to="/" style={{height:"fit-content", width:"140px",position:"absolute",left:"3rem",top:"3.95rem",zIndex:2}}>
         <NameIcon className="logo-search-list"/>
         </NavLink>
         <div className='header-logo-choice-container'>
@@ -69,8 +69,10 @@ const CompanyDetail = () => {
         <h1  className="job-title" key={index}>{item.name}</h1>
         <div className="descriptions">
         <p className="job-location"> {item.company.name}</p>
+        <div style={{display:"flex",marginTop:"16px",alignSelf:"baseline"}}>
         <MapIcon className="map-icon"/>
-        <p className="job-local"> {item.locations.length=== 0 ?null :item.locations[0].name }</p>
+        <p className="job-local" style={{marginTop:"0", textAlign:"left"}}> {item.locations.length=== 0 ?null :item.locations[0].name }</p>
+        </div>
         </div>
         </div>
         </div>

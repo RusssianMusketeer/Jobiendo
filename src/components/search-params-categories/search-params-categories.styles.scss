@@ -3,10 +3,19 @@
     text-align: initial; 
     font-size: 13px;
 
+    
+
     .job-title{
         margin: 0;
         cursor: default;
     }
+    .job-title-mobil{
+        font-family: "EB Garamond", serif;
+        font-size: 27px;
+        color: orange;
+        margin-top: 0;
+    }
+    
 
     .checkbox{
         margin-top: 0.5rem;
@@ -16,4 +25,67 @@
             cursor: pointer;
         }
     }
+
+        
+
 }
+.search-params-mobil{
+    width: auto;
+    text-align: initial; 
+    font-size: 13px;
+    padding-right: 2rem;
+    border-width: 2px;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-color: orange;
+    border-style: solid;
+
+
+
+    .job-title{
+        margin: 0;
+        cursor: default;
+
+    }
+    .job-title-mobil{
+        font-family: "EB Garamond", serif;
+        font-size: 30px;
+        color: orange;
+        margin-top: 0;
+        @media (max-width:650px){
+            font-size: 20px;
+        }
+    }
+    
+
+    .checkbox-mobil{
+        margin-top: 0.5rem;
+        margin-bottom: 0.6rem;
+        
+        input {
+            margin-left:0 ;
+            cursor: pointer;
+            border-width: 1px!important;
+        border-style: solid!important;
+        border-color: orange!important;
+        margin-bottom: 0;
+        margin-right: 9px;
+        @media (max-width:650px){
+            margin-right: 4px;
+        }
+        }
+        label{
+            font-weight: 600!important;
+            font-size: 16px;
+            @media (max-width:650px){
+                font-size: 14px;
+            }
+            @media (max-width:450px){
+                font-size: 12px;
+            }
+        }
+        }
+
+}
+
