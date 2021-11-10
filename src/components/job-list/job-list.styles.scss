@@ -76,6 +76,62 @@
         }
 
     }
+    .title-image-mobil{
+        display: flex;
+        .image-logo-mobil{
+            height: 68px;
+            margin-right: 2rem;
+
+            @media (max-width:750px){
+                object-fit: contain;
+                width: 130px;
+                margin-right: 1rem;   
+            }
+
+            @media (max-width:450px){
+                margin-right: 0.3rem;
+                width: 90px;   
+            }
+            @media (max-width:410px){
+                
+                width: 75px;   
+            }
+
+            
+        }
+        .job-title{
+            text-align: left;
+            font-size: 23px;
+            align-self: self-start;
+            margin: 0;
+            font-weight: 600;
+
+            @media (max-width:1350px){
+                font-size: 19px;    
+            }
+
+            @media (max-width:875px){
+                font-size: 14px;    
+            }
+            @media (max-width:660px){
+                font-size: 12px;    
+            }
+            @media (max-width:515px){
+                font-weight: 800;
+                font-size: 10px;
+            }
+
+    
+            @media (max-width:450px){
+                margin-top: 7px;  
+            }
+            @media (max-width:380px){
+                margin-top: 9px;   
+            }
+    
+        }
+
+    }
 
     .descriptions{
         display: flex;
@@ -274,6 +330,98 @@
             font-size: 8px;
             padding: 0.6rem;  
         }
+        @media (max-width:380px){
+            font-size: 7px;
+            padding: 0.5rem;  
+        }
+        
+
+        &:hover{
+            background-color: black;
+            color: #fff!important;
+            }
+        }
+    }
+    .button-job-container-mobil{
+        align-self: center;
+        display: flex;
+
+        @media (max-width:885px){
+            flex-direction: column;
+        }
+
+        @media (max-width:450px){
+            margin-top: 0.5rem;
+            align-self: baseline;
+        }
+        @media (max-width:380px){
+            margin-top: 0.6rem;
+        }
+
+        
+
+        .view-job-button{
+        border: 1px solid #3852d4;
+        color: #3852d4;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        white-space: nowrap;
+        margin-right: 2rem;
+        font-weight: 700;
+        font-size: 12px;
+        text-decoration: none;
+
+
+        @media (max-width:880px){
+            font-size: 10px;
+            align-self: flex-start;
+            margin-bottom: 0.5rem;   
+        }
+        
+        @media (max-width:550px){
+            font-size: 8px;
+            padding: 0.6rem; 
+        }
+        
+        @media (max-width:380px){
+            font-size: 7px;
+            padding: 0.5rem;  
+        }
+        
+
+        &:hover{
+        background-color: #3852d4;
+        color: #fff;
+        }
+        }
+
+        .apply-muse{
+        border: 1px solid black;
+        font-weight: 700;
+        font-size: 12px;
+        padding: 1rem;
+        border-radius: 5px;
+        width: 150px;
+        background-color:white;
+        text-decoration: none;
+        color: black;
+        height: fit-content;
+
+        @media (max-width:880px){
+            font-size: 10px;
+            padding: 0.8rem;
+            align-self: center; 
+            width: fit-content;  
+        }
+
+        
+        @media (max-width:550px){
+            font-size: 8px;
+            padding: 0.6rem; 
+            white-space: nowrap; 
+        }
+        
         @media (max-width:380px){
             font-size: 7px;
             padding: 0.5rem;  
