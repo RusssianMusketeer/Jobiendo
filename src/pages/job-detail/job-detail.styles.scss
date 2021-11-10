@@ -107,7 +107,7 @@
         grid-template-columns: 1.1fr 1fr;
     }
     @media(max-width:"380px"){
-        grid-template-columns: 0.9fr 1fr;
+        grid-template-columns: 0.8fr 1fr;
         
     }
 
@@ -187,12 +187,7 @@
                     font-size: 12px;
                     top: 0;
                 }
-                @media(max-width:"365px"){
-                    padding:0.20rem;
-                    font-size: 11px;
-                    
-                }
-    
+
                 
             
                 &:hover{
@@ -234,12 +229,6 @@
             font-size: 12px;
             top: 0;
         }
-        @media(max-width:"365px"){
-            padding:0.20rem;
-            font-size: 11px;
-            
-        }
-        
 
         &:hover{
             background-color: black;
