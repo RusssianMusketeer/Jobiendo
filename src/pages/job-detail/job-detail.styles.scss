@@ -106,6 +106,10 @@
     @media(max-width:"1200px"){
         grid-template-columns: 1.1fr 1fr;
     }
+    @media(max-width:"380px"){
+        grid-template-columns: 0.9fr 1fr;
+        
+    }
 
     .job-details-title{
         margin-top: 0;
@@ -183,10 +187,12 @@
                     font-size: 12px;
                     top: 0;
                 }
-                @media(max-width:"425px"){
-
-                    font-size: 10px;
+                @media(max-width:"365px"){
+                    padding:0.20rem;
+                    font-size: 11px;
+                    
                 }
+    
                 
             
                 &:hover{
@@ -228,10 +234,10 @@
             font-size: 12px;
             top: 0;
         }
-
-        @media(max-width:"425px"){
+        @media(max-width:"365px"){
+            padding:0.20rem;
+            font-size: 11px;
             
-            font-size: 10px;
         }
         
 
@@ -401,10 +407,7 @@
             font-size: 12px;
             top: 0;
         }
-        @media(max-width:"425px"){
-
-            font-size: 10px;
-        }
+        
         
     
         &:hover{
@@ -443,10 +446,7 @@
         font-size: 12px;
         top: 0;
     }
-    @media(max-width:"425px"){
-
-        font-size: 10px;
-    }
+    
     
 
     &:hover{
