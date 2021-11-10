@@ -43,7 +43,7 @@
 .button-filters{
     padding: 0;
         border-radius: 5px;
-        width: 95%;
+        width: 85%;
         outline: none;
         text-align: center;
         text-decoration: none;
@@ -68,6 +68,11 @@
         @media (min-width:1016px){
       
             display: none;
+        }
+
+        @media (max-width:440px){
+      
+            width: 87%;
         }
     }
 
