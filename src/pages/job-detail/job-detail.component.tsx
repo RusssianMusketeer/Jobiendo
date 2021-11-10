@@ -9,11 +9,15 @@ import { ReactComponent as CompagnyIcon} from '../../assets/company-icon.svg';
 import { ReactComponent as NameIcon} from '../../assets/jobiendo_logo_3.svg';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import HamburgerMenu from '../../components/hamburger-menu/hamburger-menu.component';
+import Hamburger from 'hamburger-react';
+import { useState } from 'react';
 
 const JobDetail = () => {
     const {date,page,setPage,results,logo,companyJobListing, setCompanyJobListing} =useContext(HomePageContext);
     const location:any= useLocation();
     const path = useLocation().pathname;
+    const [isOpen, setOpen] = useState(false);
     
     return(
         <section>
@@ -22,6 +26,8 @@ const JobDetail = () => {
         <NavLink className="jobiando-mobil-logo" to="/" style={{height:"fit-content", width:"140px",position:"absolute",left:"3rem",top:"3.95rem",zIndex:2}}>
         <NameIcon className="logo-search-list"/>
         </NavLink>
+        <HamburgerMenu info={isOpen}/>
+        <Hamburger toggled={isOpen} toggle={setOpen} size={26}/>
         <div className='header-logo-choice-container'>
              <NavLink className ='choice' to='/'> HOME </NavLink>
              <NavLink className ='choice' to='/search' style={{background: (path=== "/job-detail") ? 'orange' : "white"}}> JOBS </NavLink>
@@ -31,11 +37,11 @@ const JobDetail = () => {
         <div className="job-detail">
         <div>
         <div className="upper-section">
-        <div className="job-details-title">
-        {location.state.title}
+        <div >
+        <h1 className="job-details-title">{location.state.title}</h1>
         </div>
-        <div style={{display:"flex"}}>
-        <div style={{marginRight:"3rem"}}>
+        <div  className="buttons-company-detail" >
+        <div className="buttons-company-div" >
         <Link className="company-card-link-job" to={{pathname: "./company-detail",
                 state: {
                     company_logo:location.state.picture,
@@ -66,7 +72,7 @@ const JobDetail = () => {
         </div>
         </div>
         <div className="text-image">
-        <div style={{float:"right",marginLeft:"2rem"}}>
+        <div className="div-image-company">
         <img className="image-job-detail" alt="company" src={location.state.image1}></img>
         </div>
         <div className="section-text">
@@ -75,7 +81,7 @@ const JobDetail = () => {
         
         </div>
         <div className="bottom-apply-muse">
-        <Link className="company-card-link-job" style={{marginRight:"3rem"}} to={{pathname: "./company-detail",
+        <Link className="company-card-link-job"  to={{pathname: "./company-detail",
                 state: {
                     company_logo:location.state.picture,
                     image_company:location.state.image1,
