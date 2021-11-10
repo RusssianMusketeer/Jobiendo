@@ -122,7 +122,7 @@ export const HomePageProvider =({children}) =>{
                   mini_image:company.refs.mini_f1_image,
                   company_name:company.name,
                   industry:company.industries.length !== 0 ? company.industries[0].name :false,
-                  company_location:company.locations[0].name,
+                  company_location:company.locations.length !== 0 ? company.locations[0].name : null,
                   company_size:company.size.name, 
                   description:company.description
                  

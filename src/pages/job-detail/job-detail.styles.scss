@@ -274,6 +274,13 @@
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     }
+    @media(max-width:"500px"){
+        font-size: 12px;
+        padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    }
 
     .tags-location-icon{
         height: 16px;
@@ -303,6 +310,13 @@
     padding-left: 0.8rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
+    }
+    @media(max-width:"500px"){
+        font-size: 12px;
+        padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
     }
         }
         .tags-company-icon{
