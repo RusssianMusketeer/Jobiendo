@@ -107,7 +107,7 @@ const CompanyDetail = () => {
 
         }}> VIEW JOB </Link>
         
-        <a className="apply-muse" href={item.refs.landing_page}>APPLY ON MUSE SITE</a>
+        <a className="apply-muse" target="_blank" rel="noreferrer" href={item.refs.landing_page}>APPLY ON MUSE SITE</a>
         </div>
         </div>
        

@@ -93,7 +93,7 @@ const JobDetail = () => {
                     company_job_info:location.state.company_info
                      }
                 }}>COMPANY</Link>
-        <a className="job-detail-apply-muse-bottom" href={location.state.muse} >APPLY ON MUSE SITE</a>
+        <a className="job-detail-apply-muse-bottom" target="_blank" rel="noreferrer" href={location.state.muse} >APPLY ON MUSE SITE</a>
         </div>
         </div>
         </section>
