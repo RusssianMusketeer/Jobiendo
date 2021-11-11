@@ -8,6 +8,8 @@ import { useContext } from 'react';
 import HomePageContext from '../../context/HomePageContext';
 import PlacesAutocomplete from 'react-places-autocomplete';
 import { useLocation } from 'react-router';
+import Hamburger from 'hamburger-react';
+import HamburgerMenu from '../../components/hamburger-menu/hamburger-menu.component';
     
 const CompanySearch =() => {
 
@@ -18,6 +20,7 @@ const CompanySearch =() => {
     const [toggle2, setToggle2] = useState(false);
     const [toggle3, setToggle3] = useState(false);
     const [locationHolder,setLocationHolder] =useState("");
+    const [isOpen, setOpen] = useState(false);
 
 
 
@@ -60,6 +63,8 @@ const CompanySearch =() => {
             <NavLink className="jobiando-mobil-logo" to="/" style={{height:"fit-content", width:"140px",position:"absolute",left:"3rem",top:"3.95rem",zIndex:2}}>
             <NameIcon className="logo-search-list"/>
             </NavLink>
+            <HamburgerMenu info={isOpen}/>
+            <Hamburger toggled={isOpen} toggle={setOpen} size={26}/>
             <div className='header-logo-choice-container'>
              <NavLink className ='choice' to='/'> HOME </NavLink>
              <NavLink className ='choice' to='/search'> JOBS </NavLink>
