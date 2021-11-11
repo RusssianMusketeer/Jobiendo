@@ -45,7 +45,6 @@ const CompanyDetail = () => {
                 <div className="company-logo-detail-div">
                 <img className="company-logo-detail" alt="logo" loading="lazy" src={location.state.company_logo }></img>
                 
-                <div className="company-detail-title-div"><h1 className="company-detail-title">{location.state.title_company}</h1></div>
                 </div>
                 </div>
                 <div className="company-detail-location-industry-size">
