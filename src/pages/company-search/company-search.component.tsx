@@ -245,9 +245,11 @@ const CompanySearch =() => {
                 <div className="active-filter-header">
                 <div className="active-title-buttons-section">
                 <h3 className="active-filter-title">Currently Applied Filters</h3>
+                <div className="mobil-button-filters-section">
                 {(companyLocation.length !== 0) ?<button className="active-filter-button-location" onClick={()=>setCompanyLocation("")}>{companyLocation} <span>x</span></button> : null}
                 {(industry.length !== 0) ?<button className="active-filter-button-industry" onClick={()=>setIndustry("")}>{industry} <span>x</span></button> : null}
                 {(companySize.length !== 0) ?<button className="active-filter-button-size" onClick={()=>setCompanySize("")}>{companySize} <span>x</span></button>: null}
+                </div>
                 </div>
                 <div className="clear-filters" onClick={()=>{setCompanyLocation("");setIndustry("");setCompanySize("")}}>
                     <p className="active-filter-text">X Clear &amp; Reset</p>
