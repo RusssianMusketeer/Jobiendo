@@ -17,7 +17,7 @@ import HamburgerMenu from '../../components/hamburger-menu/hamburger-menu.compon
 
 const CompanyDetail = () => {
 
-    const {companyJobPage,setCompanyJobPage,loading,setCompanyJob,companyJob} =useContext(HomePageContext);
+    const {loading} =useContext(HomePageContext);
     const location:any= useLocation();
     const path = useLocation().pathname;
     const [slice,setSlice]=useState<number[]>([0,4]);
@@ -67,7 +67,7 @@ const CompanyDetail = () => {
         {location.state.company_job_info.results.length !==0 ?<div style={{width: "80%",margin: "0 auto", marginBottom:"3rem"}}>
         {(loading || location.state.company_job_info.results ===undefined ? ([1,2,3,4,5,].map((n) => <SkeletonListing key={n}/>))
         : (location.state.company_job_info.results.slice(slice[0], slice[1]).map((item:any,index:any)=>(
-        <div className="job-container" style={{marginTop: index===0 ? '3rem' : '2rem', width: "92.4%",cursor:"default"}}>
+        <div className="job-container" key={index} style={{marginTop: index===0 ? '3rem' : '2rem', width: "92.4%",cursor:"default"}}>
            
             <div className="upper-part-listing">
         <div className="title-image-mobil">

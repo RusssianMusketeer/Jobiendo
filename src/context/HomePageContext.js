@@ -45,7 +45,6 @@ export const HomePageProvider =({children}) =>{
          
             
           const jobResponse =await Axios.get(`https://www.themuse.com/api/public/jobs?api_key=a42efee3b611d30271a8ac809f508ca8cb661320abd94f566ca5e7026a974cac&`,{ params: { category:params.search,location:params.location,level:params.level,page:page } }); 
-          console.log(jobResponse)
           setResults(
             jobResponse.data.results.map((item,index) =>{
               return (
@@ -72,10 +71,10 @@ export const HomePageProvider =({children}) =>{
             return(logo.company.id)
           });
 
-          console.log(compagnyArray)
+          
           const compagnyResponse = await compagnyArray.map((logo)=> Axios.get(`https://www.themuse.com/api/public/companies${`/`+logo}?api_key=a42efee3b611d30271a8ac809f508ca8cb661320abd94f566ca5e7026a974cac`));
           Axios.all(compagnyResponse).then((response)=>{  
-            console.log(response)        
+                  
             setLogo(response.map((logo,index)=>{
               return({
                   link:logo.data.refs.logo_image,
@@ -98,7 +97,7 @@ export const HomePageProvider =({children}) =>{
 
           const compagnyJobResponseListing = await companyJobInfo.map((name)=> Axios.get(`https://www.themuse.com/api/public/jobs?api_key=a42efee3b611d30271a8ac809f508ca8cb661320abd94f566ca5e7026a974cac&company=${name}&page=1`));
           Axios.all(compagnyJobResponseListing).then((response)=>{  
-            console.log(response)        
+                   
             setCompanyJobListing(response.map((logo,number)=>{
               return({
                   results:logo.data.results,
@@ -136,11 +135,11 @@ export const HomePageProvider =({children}) =>{
             return(name.name)
           });
 
-          console.log(compagnyJobName)
+          
           
           const compagnyJobResponse = await compagnyJobName.map((name)=> Axios.get(`https://www.themuse.com/api/public/jobs?api_key=a42efee3b611d30271a8ac809f508ca8cb661320abd94f566ca5e7026a974cac&company=${name}&page=${companyJobPage}`));
           Axios.all(compagnyJobResponse).then((response)=>{  
-            console.log(response)        
+                    
             setCompanyJob(response.map((logo,number)=>{
               return({
                   results:logo.data.results,

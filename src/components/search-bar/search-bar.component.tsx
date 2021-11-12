@@ -6,7 +6,7 @@ import './search-bar.styles.scss';
 import { useState } from 'react';
 
 const SearchBar =() => {
-    const {search,location,setLocation,setSearch} =useContext(HomePageContext);
+    const {setLocation,setSearch} =useContext(HomePageContext);
     const [searchHolder, setSearchHolder]=useState("");
     const [locationHolder, setLocationHolder]=useState("");
 

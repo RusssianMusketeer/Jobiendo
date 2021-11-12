@@ -4,7 +4,6 @@ import './hamburger-menu.styles.scss';
 import { ReactComponent as NameIcon} from '../../assets/jobiendo_logo_3.svg';
 
 const HamburgerMenu = (info:any) => {
-    console.log(info.info)
     return(
     <div className="hamburger-section" style={info.info ? {top:"0"}: {top:"-230px"} }>
         <NameIcon className="logo-hamburger"/>

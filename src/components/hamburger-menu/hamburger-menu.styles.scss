@@ -21,23 +21,20 @@
         margin-bottom: 1rem;
         @media (max-width:485px){
             width: 130px;
+            margin-top: 1.5rem;
         }
     }
 
     .hamburger-container{
     width: fit-content;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 
-    @media (max-width:485px){
-      margin-top: 1rem;      
-    }
+
     a{  
-        margin: 0 auto;
-        width: fit-content;
-        display: flex;
-        flex-direction: column;
         text-decoration: none;
-        margin-bottom: 1.5rem;
+        margin-right: 1rem;
         font-weight: 700;
         font-size: 17px;
         overflow: hidden;
@@ -48,6 +45,14 @@
         background-size: 200% 100%!important;
         background-position: 100%!important;
         transition: background-position 275ms ease;
+
+        @media (max-width:750px){
+            align-self: center;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+
+
         &:hover {
             background-position: 0 100%!important;
           }

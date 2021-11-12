@@ -13,7 +13,7 @@ const SearchParamsCategories =({type}:{type:any})=> {
         "HR","IT","Law","Marketing","Mechanic","Mental Health","Nurses","Office Administration","Product","Project Management",
         "Public Relations","Recruiting","Retail","Sales","UX","Writer"
     ];
-    console.log(type)
+   
     const handleOnChange = (e:any) => {
         for (let i = 0; i < categories.length; i++){
             if (e===search){
@@ -29,8 +29,7 @@ const SearchParamsCategories =({type}:{type:any})=> {
         }
         
       };
-      const classes =`${type}`;
-      console.log(classes)
+      
 return (
     
     <div className={"search-params"+type[0]}>

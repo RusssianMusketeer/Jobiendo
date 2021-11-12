@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const CompanyList= ()=> {
 
-    const {setCompanyJob,companyJob,companyPage,setCompanyPage,companyResults,loading} =useContext(HomePageContext);
+    const {companyJob,companyPage,setCompanyPage,companyResults,loading} =useContext(HomePageContext);
 
 
     return(
@@ -21,7 +21,7 @@ const CompanyList= ()=> {
             (
                 companyResults.map((item:any,index:any)=>(
 
-                <Link className="company-card-link" to={{pathname: "./company-detail",
+                <Link className="company-card-link" key={index} to={{pathname: "./company-detail",
                 state: {
                     company_logo:item.link,
                     image_company:item.image_2,

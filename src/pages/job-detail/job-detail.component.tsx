@@ -2,8 +2,6 @@ import React from 'react';
 import './job-detail.styles.scss';
 import { useLocation } from "react-router-dom";
 import ReactHtmlParser from 'react-html-parser';
-import HomePageContext from '../../context/HomePageContext';
-import {useContext} from 'react';
 import { ReactComponent as MapIcon} from '../../assets/map.svg';
 import { ReactComponent as CompagnyIcon} from '../../assets/company-icon.svg';
 import { ReactComponent as NameIcon} from '../../assets/jobiendo_logo_3.svg';
@@ -14,14 +12,13 @@ import Hamburger from 'hamburger-react';
 import { useState } from 'react';
 
 const JobDetail = () => {
-    const {date,page,setPage,results,logo,companyJobListing, setCompanyJobListing} =useContext(HomePageContext);
     const location:any= useLocation();
     const path = useLocation().pathname;
     const [isOpen, setOpen] = useState(false);
     
     return(
         <section>
-            {console.log(location.state.company_info )}
+            
         <div className="job-photo-header"/> 
         <NavLink className="jobiando-mobil-logo" to="/" style={{height:"fit-content", width:"140px",position:"absolute",left:"3rem",top:"3.95rem",zIndex:2}}>
         <NameIcon className="logo-search-list"/>
@@ -56,7 +53,7 @@ const JobDetail = () => {
                 }}>COMPANY</Link>
         </div>
         <div>
-        <a className="job-detail-apply-muse" href={location.state.muse}>APPLY ON MUSE SITE</a>
+        <a className="job-detail-apply-muse" target="_blank" rel="noreferrer" href={location.state.muse}>APPLY ON MUSE SITE</a>
         </div>
         </div>
         </div>

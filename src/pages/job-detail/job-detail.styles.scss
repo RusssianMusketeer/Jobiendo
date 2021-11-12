@@ -142,7 +142,7 @@
     }
     .buttons-company-detail{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
 
         @media(max-width:"1000px"){
             flex-direction: column-reverse;

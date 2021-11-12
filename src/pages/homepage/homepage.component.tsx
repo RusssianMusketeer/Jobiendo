@@ -22,7 +22,7 @@ const HomePage =() => {
     const [searchHolder, setSearchHolder]=useState("");
     const [locationHolder, setLocationHolder]=useState("");
     const history = useHistory();
-    const {search,setSearch,location,setLocation} =useContext(HomePageContext);
+    const {setSearch,setLocation} =useContext(HomePageContext);
     const path = useLocation().pathname;
     const [isOpen, setOpen] = useState(false);
     
