@@ -343,6 +343,12 @@
                     position: absolute;
                     width: 277px;
                     height: 100%;
+                    @media(max-width:750px){
+                        width: 205px;
+                    }
+                    @media(max-width:450px){
+                        width: 165px;
+                    }
                 }
 
                 .dropdown-list-location{
