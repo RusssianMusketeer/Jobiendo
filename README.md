@@ -9,6 +9,13 @@ This was a job search web app, coming from the idea of searching for a job that 
 
 **Server:** Muse API
 
+## Screenshots
+
+![App Screenshot](https://photos-webapp-portfolio.s3.us-east-2.amazonaws.com/master_optimized.d2ifz8wtm80ke3.amplifyapp.com_search.png)
+
+#
+
+![App Screenshot](https://photos-webapp-portfolio.s3.us-east-2.amazonaws.com/Jobs-image+png-list.png)
 
 
 ## Lessons Learned
