@@ -113,8 +113,8 @@ const CompanyDetail = () => {
        
         <div className="lower-part-listing">
             <div className="tag-container">
-            <div className="tag" style={{display: item.levels[0].name  ? 'flex' : 'none'}}>
-                { item.levels[0].name }
+            <div className="tag" style={{display: item.levels.length !== 0  ? 'flex' : 'none'}}>
+                { item.levels.length !== 0 ? item.levels[0].name : null  }
             </div>
             <div className="tag" style={{display: location.state.compagny_industry  ? 'flex' : 'none'}}>
                 {location.state.compagny_industry}

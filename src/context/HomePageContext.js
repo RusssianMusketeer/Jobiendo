@@ -45,6 +45,7 @@ export const HomePageProvider =({children}) =>{
          
             
           const jobResponse =await Axios.get(`https://www.themuse.com/api/public/jobs?api_key=a42efee3b611d30271a8ac809f508ca8cb661320abd94f566ca5e7026a974cac&`,{ params: { category:params.search,location:params.location,level:params.level,page:page } }); 
+          console.log(jobResponse,"heloo")
           setResults(
             jobResponse.data.results.map((item,index) =>{
               return (
@@ -56,7 +57,7 @@ export const HomePageProvider =({children}) =>{
                   item.refs.landing_page,
                   item.contents,
                   item.company.id,
-                  item.levels[0].name,
+                  item.levels.length !==0 ? item.levels[0].name : false ,
                   item.categories.length !== 0 ? item.categories[0].name : false,
                   index
                  
@@ -65,7 +66,7 @@ export const HomePageProvider =({children}) =>{
             })
 
           )
-
+        
     
           const compagnyArray= jobResponse.data.results.map((logo)=>{
             return(logo.company.id)

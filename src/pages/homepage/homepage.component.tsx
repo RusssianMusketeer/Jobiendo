@@ -65,7 +65,7 @@ const HomePage =() => {
       className ="search-input"
       type="text"
       value={searchHolder}
-      placeholder={"Find a carrer in ..."}
+      placeholder={"Find a career in ..."}
       onChange={(e: React.ChangeEvent<HTMLInputElement>) =>setSearchHolder(e.target.value)}
       list="categories"
       />
